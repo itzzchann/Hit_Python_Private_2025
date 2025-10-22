@@ -1,0 +1,23 @@
+a=int(input("Nhập số a: "))
+b=int(input("nhap số b: "))
+print("a+b=",a+b)
+print("a-b=",a-b)
+print("a*b=",a*b)
+print("a/b=",a/b)
+print("a//b=",a//b)
+print("a%b=",a%b)
+print("a**b=",a**b)
+if a>b:
+    print("a lớn hơn b")
+elif a<b:
+    print("a nhỏ hơn b")
+else:
+    print("a bằng b")
+print("A and B =",a &b)
+print("A or B =",a |b)
+print("a xor b =",a^b)
+print("not a==b =",not (a==b))
+print("a dịch phải 5 bit =",a>>5)
+print("a dịch trái 6 bit =",a<<6)
+binary_a=bin(a)[2:]
+print("hệ nhị phân đảo của a là:",binary_a[::-1])

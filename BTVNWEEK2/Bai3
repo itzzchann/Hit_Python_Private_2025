@@ -1,0 +1,24 @@
+def xeploai(n):
+    if n>=200:
+        return "Xuat sac"
+    elif n>=150:
+        return "Gioi"
+    elif n>=100:
+        return "Kha"
+    else :
+        return "Yeu"
+   
+n=int(input("Nhap so luong hoc sinh: "))
+danhsach=[]
+for i in range(n):
+        print("Nhap thong tin hoc sinh thu ",i+1)
+        ten=input("Nhap ten hoc sinh: ")
+        tx1=int(input("Bai kiem tra 1: "))
+        tx2=int(input("Bai kiem tra 2: "))
+        tongdiem=tx1+tx2
+        xeploai_hs=xeploai(tongdiem)
+        danhsach.append((i+1,ten,tx1+tx2,xeploai_hs))
+print("\n===== KẾT QUẢ XẾP LOẠI =====")
+for stt,ten,tongdiem,xeploai_hs in danhsach:
+    print("{} , {}, {}, {}".format(stt,ten,tongdiem,xeploai_hs))
+        

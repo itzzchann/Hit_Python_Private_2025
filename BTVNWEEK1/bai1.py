@@ -21,3 +21,5 @@ print("a dịch phải 5 bit =",a>>5)
 print("a dịch trái 6 bit =",a<<6)
 binary_a=bin(a)[2:]
 print("hệ nhị phân đảo của a là:",binary_a[::-1])
+print("hệ nhị phân  của a là:",binary_a)
+print(bin(a>>5)[2:]) 
